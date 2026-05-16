@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indah Khoirunisa | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen overflow-x-hidden relative">
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header id="main-navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="nav-logo font-semibold text-xl tracking-wide cursor-pointer">Indah</div>
+
+            <!-- Links + Toggle -->
+            <div class="flex items-center gap-4 sm:gap-8">
+                <div class="hidden sm:flex items-center space-x-6 text-sm font-medium tracking-wider">
+                    <a href="#home"    class="nav-link hover:text-cyan-400 transition-colors duration-300 !text-white font-semibold">Home</a>
+                    <a href="#about"   class="nav-link hover:text-cyan-400 transition-colors duration-300">About</a>
+                    <a href="#skill"   class="nav-link hover:text-cyan-400 transition-colors duration-300">Skill</a>
+                    <a href="#project" class="nav-link hover:text-cyan-400 transition-colors duration-300">Project</a>
+                    <a href="#contact" class="nav-link hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- ☀️🌙 TOGGLE BUTTON — selalu tampil di semua ukuran layar -->
+                <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Ganti Mode Tampilan">
+                    <div id="theme-toggle-thumb">🌙</div>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <main id="home" class="relative min-h-screen flex items-center z-10 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 pt-28 pb-16">
+        <div class="md:col-span-7 flex flex-col justify-center text-left space-y-6 order-2 md:order-1">
+            <span class="text-cyan-400 text-xs sm:text-sm font-semibold tracking-widest uppercase reveal">
+                Hello! Welcome to my portofolio
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl leading-tight reveal delay-1">
+                <span class="text-dyn-primary">I'M</span>
+                <span class="text-cyan-500 font-light tracking-wide font-mono text-2xl sm:text-3xl inline-block px-2 py-0.5 rounded border border-cyan-500/30 bg-cyan-950/20 ml-1">DEVELOPER</span>
+                <br>
+                <span class="font-serif-elegant tracking-wide text-dyn-primary block mt-3">INDAH KHOIRUNISA</span>
+            </h1>
+            <p class="text-dyn-secondary max-w-xl text-sm sm:text-base leading-relaxed font-light reveal delay-2">
+                I am a student at SMKN 1 Tengaran focusing on Front-End Web Development. I love turning lines of code into interactive, clean, and responsive web interfaces, always striving to combine visual aesthetics with seamless user experiences.
+            </p>
+            <div class="pt-2 reveal delay-3">
+                <a href="#contact" class="inline-block border border-cyan-500/50 text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 hover:shadow-[0_0_25px_rgba(34,211,238,0.4)] px-8 py-3 rounded-full text-sm font-medium tracking-wider transition-all duration-300 transform hover:-translate-y-1"
+                   style="background: var(--bg-btn);">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+        <div class="md:col-span-5 flex items-center justify-center order-1 md:order-2 relative mt-6 md:mt-0 reveal delay-2">
+            <div class="absolute w-72 h-72 sm:w-96 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none animate-glow"></div>
+            <div class="relative w-64 sm:w-80 aspect-[4/5] overflow-hidden rounded-b-full animate-float"
+                 style="box-shadow: 0 15px 50px var(--shadow-hero); border: 1px solid var(--border-card);">
+                <div class="absolute inset-0 bg-gradient-to-t from-cyan-950/30 via-transparent to-transparent pointer-events-none z-10"></div>
+                <img src="asset/foto indah.png" alt="Indah Khoirunisa"
+                     class="w-full h-full object-cover object-center filter contrast-105 brightness-95 transition-transform duration-700 hover:scale-105">
+            </div>
+        </div>
+    </main>
+
+    <!-- Divider -->
+    <div class="w-full max-w-5xl mx-auto px-6 reveal">
+        <div class="w-full h-[1px]" style="background: linear-gradient(to right, transparent, var(--divider), transparent);"></div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="min-h-screen flex items-center z-10 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 pt-24 pb-20">
+
+        <div class="md:col-span-5 flex items-center justify-center relative reveal">
+            <div class="absolute w-64 h-64 rounded-full blur-3xl pointer-events-none animate-glow" style="background: var(--glow-orb);"></div>
+            <div class="relative w-64 h-80 rounded-3xl flex items-center justify-center overflow-hidden animate-float-slow card-dyn"
+                 style="box-shadow: inset 0 0 30px rgba(34,211,238,0.07);">
+                <div class="absolute inset-0 z-10 pointer-events-none"
+                     style="opacity: var(--grid-opacity); background-image: linear-gradient(to right, var(--grid-line) 1px, transparent 1px), linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none z-10"></div>
+                <img src="asset/foto robot.png" alt="robot"
+                     class="w-full h-full object-cover object-center filter contrast-105 brightness-95 transition-transform duration-700 hover:scale-105">
+            </div>
+        </div>
+
+        <div class="md:col-span-7 flex flex-col space-y-8">
+            <div class="flex flex-col reveal">
+                <h2 class="text-4xl font-serif-elegant tracking-wide text-dyn-primary">
+                    About <span class="text-cyan-400 font-sans font-medium">Me</span>
+                </h2>
+                <div class="w-28 h-0.5 mt-2" style="background: linear-gradient(to right, #22d3ee, transparent);"></div>
+            </div>
+
+            <div class="text-dyn-secondary text-sm sm:text-base leading-relaxed space-y-4 font-light tracking-wide reveal delay-1">
+                <p class="text-dyn-primary font-medium text-base">Hi, I'm Indah Khoirunisa.</p>
+                <p>I am a 10th-grade student at <span class="text-cyan-400 font-normal">SMKN 1 Tengaran</span>, born in Semarang on September 1, 2010. I am a friendly and cheerful individual with a deep passion for the digital world.</p>
+                <p>My hobbies include listening to music and watching movies, which often spark my creative inspiration. To me, coding is a creative way to build future solutions. I truly enjoy the process of designing and developing websites that are both aesthetic and functional.</p>
+            </div>
+
+            <div class="card-dyn p-6 rounded-2xl max-w-md relative overflow-hidden group reveal delay-2">
+                <div class="absolute -top-10 -right-10 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all duration-500"></div>
+                <div class="flex flex-col items-center text-center space-y-4">
+                    <h3 class="text-dyn-primary text-base font-medium tracking-wide">My Experience</h3>
+                    <p class="text-dyn-secondary text-sm font-light">Experience in web development.</p>
+                    <a href="asset/bhs inggris.pdf"
+                       class="inline-block border border-cyan-500/40 hover:border-cyan-500 hover:bg-cyan-500 hover:text-slate-950 px-6 py-2 rounded-full text-xs font-medium text-cyan-400 tracking-wider transition-all duration-300 transform hover:-translate-y-0.5"
+                       style="background: var(--bg-btn);">
+                        View More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full max-w-5xl mx-auto px-6 reveal">
+        <div class="w-full h-[1px]" style="background: linear-gradient(to right, transparent, var(--divider), transparent);"></div>
+    </div>
+
+    <!-- ===================== SKILL ===================== -->
+    <section id="skill" class="min-h-screen flex flex-col justify-center z-10 px-6 max-w-5xl mx-auto pt-24 pb-20">
+
+        <div class="flex flex-col items-center text-center mb-16 reveal">
+            <h2 class="text-4xl font-serif-elegant tracking-wide text-dyn-primary">
+                My <span class="text-cyan-400 font-sans font-medium">Skill</span>
+            </h2>
+            <div class="w-28 h-0.5 mt-3" style="background: linear-gradient(to right, transparent, #22d3ee, transparent);"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+            <div class="md:col-span-8 space-y-6">
+
+                <!-- HTML -->
+                <div class="skill-item reveal" data-percent="90">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-dyn-primary font-mono tracking-widest text-sm font-medium">HTML</span>
+                        <span class="text-dyn-muted font-mono text-sm">90%</span>
+                    </div>
+                    <div class="w-full h-7 rounded-full p-1 overflow-hidden skill-track-dyn">
+                        <div class="skill-progress" style="width:0%"></div>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-item reveal delay-1" data-percent="80">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-dyn-primary font-mono tracking-widest text-sm font-medium">CSS</span>
+                        <span class="text-dyn-muted font-mono text-sm">80%</span>
+                    </div>
+                    <div class="w-full h-7 rounded-full p-1 overflow-hidden skill-track-dyn">
+                        <div class="skill-progress" style="width:0%"></div>
+                    </div>
+                </div>
+
+                <!-- JS -->
+                <div class="skill-item reveal delay-2" data-percent="40">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-dyn-primary font-mono tracking-widest text-sm font-medium">JAVASCRIPT</span>
+                        <span class="text-dyn-muted font-mono text-sm">40%</span>
+                    </div>
+                    <div class="w-full h-7 rounded-full p-1 overflow-hidden skill-track-dyn">
+                        <div class="skill-progress" style="width:0%"></div>
+                    </div>
+                </div>
+
+                <!-- Tailwind -->
+                <div class="skill-item reveal delay-3" data-percent="40">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-dyn-primary font-mono tracking-widest text-sm font-medium">TAILWIND CSS</span>
+                        <span class="text-dyn-muted font-mono text-sm">40%</span>
+                    </div>
+                    <div class="w-full h-7 rounded-full p-1 overflow-hidden skill-track-dyn">
+                        <div class="skill-progress" style="width:0%"></div>
+                    </div>
+                </div>
+
+                <!-- Figma -->
+                <div class="skill-item reveal" data-percent="75" style="transition-delay:400ms">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-dyn-primary font-mono tracking-widest text-sm font-medium">FIGMA</span>
+                        <span class="text-dyn-muted font-mono text-sm">75%</span>
+                    </div>
+                    <div class="w-full h-7 rounded-full p-1 overflow-hidden skill-track-dyn">
+                        <div class="skill-progress" style="width:0%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Logo Icons -->
+            <div class="md:col-span-4 flex items-center justify-center md:justify-end reveal delay-2">
+                <div class="grid grid-cols-2 gap-6 p-4 rounded-3xl card-dyn shadow-inner">
+                    <div class="logo-card-dyn w-20 h-20 flex items-center justify-center rounded-2xl hover:border-orange-500 hover:shadow-[0_0_15px_rgba(244,63,94,0.15)] group">
+                        <img src="asset/logo html.png" class="w-12 h-12 grayscale group-hover:grayscale-0 transition-all duration-300" alt="HTML5">
+                    </div>
+                    <div class="logo-card-dyn w-20 h-20 flex items-center justify-center rounded-2xl hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] group">
+                        <img src="asset/logo css.png" class="w-12 h-12 grayscale group-hover:grayscale-0 transition-all duration-300" alt="CSS3">
+                    </div>
+                    <div class="logo-card-dyn w-20 h-20 flex items-center justify-center rounded-2xl hover:border-yellow-500 hover:shadow-[0_0_15px_rgba(234,179,8,0.15)] group">
+                        <img src="asset/logo js.png" class="w-12 h-12 grayscale group-hover:grayscale-0 transition-all duration-300" alt="JS">
+                    </div>
+                    <div class="logo-card-dyn w-20 h-20 flex items-center justify-center rounded-2xl hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] group">
+                        <img src="asset/logo tailwind.png" class="w-12 h-12 grayscale group-hover:grayscale-0 transition-all duration-300" alt="Tailwind">
+                    </div>
+                    <div class="logo-card-dyn col-span-2 mx-auto w-20 h-20 flex items-center justify-center rounded-2xl hover:border-purple-500 hover:shadow-[0_0_15px_rgba(168,85,247,0.15)] group">
+                        <img src="asset/logo figma.png" class="w-10 h-10 grayscale group-hover:grayscale-0 transition-all duration-300" alt="Figma">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="w-full max-w-5xl mx-auto px-6 reveal">
+        <div class="w-full h-[1px]" style="background: linear-gradient(to right, transparent, var(--divider), transparent);"></div>
+    </div>
+
+    <!-- ===================== PROJECT ===================== -->
+    <section id="project" class="min-h-screen flex flex-col justify-center z-10 px-6 max-w-6xl mx-auto pt-24 pb-20">
+
+        <div class="flex flex-col items-center text-center mb-16 reveal">
+            <h2 class="text-4xl font-serif-elegant tracking-wide text-dyn-primary">
+                My <span class="text-cyan-400 font-sans font-medium">Project</span>
+            </h2>
+            <div class="w-28 h-0.5 mt-3" style="background: linear-gradient(to right, transparent, #22d3ee, transparent);"></div>
+        </div>
+
+        <div class="space-y-8 flex flex-col items-center">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full">
+
+                <div class="project-card-container reveal">
+                    <div class="project-card card-dyn p-5 rounded-2xl flex flex-col items-center text-center shadow-lg group relative overflow-hidden h-full">
+                        <div class="w-full h-40 overflow-hidden rounded-xl mb-4" style="background: var(--bg-card-solid);">
+                            <img src="asset/project 1.jfif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90 group-hover:brightness-100" alt="Sampah Jadi Karya">
+                        </div>
+                        <h3 class="text-dyn-primary font-medium text-base tracking-wide mb-4">Sampah Jadi Karya</h3>
+                        <a href="https://indahkhoirunnisa3625-arch.github.io/kolaborasi-1/"
+                           class="inline-block border text-dyn-muted group-hover:border-cyan-500 group-hover:text-cyan-400 px-5 py-1.5 rounded-full text-xs tracking-wider font-mono transition-all duration-300"
+                           style="background: var(--bg-card-solid); border-color: var(--border-card);">
+                            view project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card-container reveal delay-1">
+                    <div class="project-card card-dyn p-5 rounded-2xl flex flex-col items-center text-center shadow-lg group relative overflow-hidden h-full">
+                        <div class="w-full h-40 overflow-hidden rounded-xl mb-4" style="background: var(--bg-card-solid);">
+                            <img src="asset/project 2.jfif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90 group-hover:brightness-100" alt="Tabel Siswa">
+                        </div>
+                        <h3 class="text-dyn-primary font-medium text-base tracking-wide mb-4">Tabel Siswa</h3>
+                        <a href="https://indahkhoirunnisa3625-arch.github.io/tugas2-bootstrap/"
+                           class="inline-block border text-dyn-muted group-hover:border-cyan-500 group-hover:text-cyan-400 px-5 py-1.5 rounded-full text-xs tracking-wider font-mono transition-all duration-300"
+                           style="background: var(--bg-card-solid); border-color: var(--border-card);">
+                            view project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card-container reveal delay-2">
+                    <div class="project-card card-dyn p-5 rounded-2xl flex flex-col items-center text-center shadow-lg group relative overflow-hidden h-full">
+                        <div class="w-full h-40 overflow-hidden rounded-xl mb-4" style="background: var(--bg-card-solid);">
+                            <img src="asset/project 3.jfif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90 group-hover:brightness-100" alt="Environs">
+                        </div>
+                        <h3 class="text-dyn-primary font-medium text-base tracking-wide mb-4">Environs</h3>
+                        <a href="https://indahkhoirunnisa3625-arch.github.io/tugas3-environment-/"
+                           class="inline-block border text-dyn-muted group-hover:border-cyan-500 group-hover:text-cyan-400 px-5 py-1.5 rounded-full text-xs tracking-wider font-mono transition-all duration-300"
+                           style="background: var(--bg-card-solid); border-color: var(--border-card);">
+                            view project
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-4xl pt-2">
+
+                <div class="project-card-container reveal">
+                    <div class="project-card card-dyn p-5 rounded-2xl flex flex-col items-center text-center shadow-lg group relative overflow-hidden h-full">
+                        <div class="w-full h-40 overflow-hidden rounded-xl mb-4" style="background: var(--bg-card-solid);">
+                            <img src="asset/project 4.jfif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90 group-hover:brightness-100" alt="Coffee Solutions">
+                        </div>
+                        <h3 class="text-dyn-primary font-medium text-base tracking-wide mb-4">Coffee Solutions</h3>
+                        <a href="https://indahkhoirunnisa3625-arch.github.io/tugas-4/"
+                           class="inline-block border text-dyn-muted group-hover:border-cyan-500 group-hover:text-cyan-400 px-5 py-1.5 rounded-full text-xs tracking-wider font-mono transition-all duration-300"
+                           style="background: var(--bg-card-solid); border-color: var(--border-card);">
+                            view project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card-container reveal delay-1">
+                    <div class="project-card card-dyn p-5 rounded-2xl flex flex-col items-center text-center shadow-lg group relative overflow-hidden h-full">
+                        <div class="w-full h-40 overflow-hidden rounded-xl mb-4" style="background: var(--bg-card-solid);">
+                            <img src="asset/project 5.jfif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90 group-hover:brightness-100" alt="Healthy Food & Catering">
+                        </div>
+                        <h3 class="text-dyn-primary font-medium text-base tracking-wide mb-4">Healthy Food & Catering</h3>
+                        <a href="https://indahkhoirunnisa3625-arch.github.io/tugas-5/"
+                           class="inline-block border text-dyn-muted group-hover:border-cyan-500 group-hover:text-cyan-400 px-5 py-1.5 rounded-full text-xs tracking-wider font-mono transition-all duration-300"
+                           style="background: var(--bg-card-solid); border-color: var(--border-card);">
+                            view project
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full max-w-5xl mx-auto px-6 reveal">
+        <div class="w-full h-[1px]" style="background: linear-gradient(to right, transparent, var(--divider), transparent);"></div>
+    </div>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="min-h-screen flex flex-col justify-center z-10 px-6 max-w-5xl mx-auto pt-24 pb-20">
+
+        <div class="flex flex-col items-center text-center mb-16 reveal">
+            <h2 class="text-4xl font-serif-elegant tracking-wide text-dyn-primary">Contact</h2>
+            <div class="w-28 h-0.5 mt-3" style="background: linear-gradient(to right, transparent, #22d3ee, transparent);"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-stretch">
+
+            <!-- Info -->
+            <div class="md:col-span-4 flex flex-col justify-center reveal">
+                <div class="p-8 rounded-3xl shadow-xl space-y-6 h-full flex flex-col justify-center border transform hover:scale-[1.02] transition-transform duration-300"
+                     style="background: var(--bg-contact-box); border-color: var(--border-contact); color: var(--text-contact-box);">
+                    <h3 class="font-serif-elegant text-2xl font-bold tracking-wide mb-2 text-center md:text-left pb-3"
+                        style="border-bottom: 1px solid var(--border-card);">Contact Info</h3>
+
+                    <div class="flex items-center space-x-4 group cursor-pointer">
+                        <div class="contact-icon w-10 h-10 flex items-center justify-center rounded-xl shadow-md">
+                            <img src="asset/logo lokasi.png" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <span class="text-sm font-medium tracking-wide group-hover:text-cyan-500 transition-colors" style="color: var(--text-contact-box);">Tengaran kulon</span>
+                    </div>
+
+                    <div class="flex items-center space-x-4 group cursor-pointer">
+                        <div class="contact-icon w-10 h-10 flex items-center justify-center rounded-xl shadow-md">
+                            <img src="asset/logo telepon.png" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        </div>
+                        <span class="text-sm font-medium tracking-wide group-hover:text-cyan-500 transition-colors" style="color: var(--text-contact-box);">85842198697</span>
+                    </div>
+
+                    <a href="https://www.tiktok.com/@mmgylv" target="_blank" class="flex items-center space-x-4 group cursor-pointer no-underline">
+                        <div class="contact-icon w-10 h-10 flex items-center justify-center rounded-xl shadow-md">
+                            <img src="asset/logo tiktok.png" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.03 1.6 4.15.91.99 2.22 1.6 3.59 1.75v3.9c-1.42-.05-2.82-.49-4.01-1.32-.18-.13-.35-.27-.52-.42v6.04c.04 2.53-.94 5.04-2.79 6.76-2.02 1.89-5.03 2.51-7.65 1.61-2.52-.84-4.52-2.99-5.18-5.56-.75-2.89.24-6.14 2.51-7.98 1.83-1.5 4.31-1.99 6.55-1.32v4.03c-1.12-.42-2.39-.24-3.34.49-.91.68-1.37 1.85-1.2 2.98.17 1.15.98 2.14 2.05 2.52 1.05.38 2.27.12 3.07-.63.63-.58.93-1.44.89-2.28V0h.02z"/></svg>
+                        </div>
+                        <span class="text-sm font-medium tracking-wide group-hover:text-cyan-400 transition-colors duration-300" style="color: var(--text-contact-box);">@mmgylv</span>
+                    </a>
+
+                    <div class="flex items-center space-x-4 group cursor-pointer">
+                        <div class="contact-icon w-10 h-10 flex items-center justify-center rounded-xl shadow-md">
+                            <img src="asset/logo ig.png" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11a1 1 0 011-1h8a1 1 0 011 1v3a1 1 0 01-1 1H8a1 1 0 01-1-1v-3z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
+                        </div>
+                        <span class="text-sm font-medium tracking-wide group-hover:text-cyan-500 transition-colors" style="color: var(--text-contact-box);">iindaah._</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider vertical -->
+            <div class="hidden md:flex md:col-span-1 justify-center items-center reveal delay-1">
+                <div class="w-[1px] h-4/5" style="background: linear-gradient(to bottom, transparent, var(--divider), transparent);"></div>
+            </div>
+
+            <!-- Form -->
+            <div class="md:col-span-7 flex flex-col justify-center reveal delay-2">
+                <div class="p-8 rounded-3xl shadow-2xl relative card-dyn">
+                    <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none"></div>
+                    <form action="#" class="space-y-6">
+
+                        <div class="relative group">
+                            <input type="text" id="form-name" required
+                                   class="input-dyn w-full rounded-xl px-5 py-3 pt-6 transition-all duration-300 input-field text-sm">
+                            <label for="form-name" class="absolute left-5 top-4 text-sm font-serif-elegant pointer-events-none floating-label">Name :</label>
+                        </div>
+
+                        <div class="relative group">
+                            <input type="email" id="form-email" required
+                                   class="input-dyn w-full rounded-xl px-5 py-3 pt-6 transition-all duration-300 input-field text-sm">
+                            <label for="form-email" class="absolute left-5 top-4 text-sm font-serif-elegant pointer-events-none floating-label">Email :</label>
+                        </div>
+
+                        <div class="relative group">
+                            <textarea id="form-message" rows="4" required
+                                      class="input-dyn w-full rounded-xl px-5 py-4 pt-7 transition-all duration-300 input-field text-sm resize-none"></textarea>
+                            <label for="form-message" class="absolute left-5 top-4 text-sm font-serif-elegant pointer-events-none floating-label">Message :</label>
+                        </div>
+
+                        <div class="flex justify-center pt-2">
+                            <button type="submit" id="magnetic-btn"
+                                    class="font-serif-elegant font-semibold tracking-wider text-sm px-10 py-3 rounded-full shadow-lg active:scale-95 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all duration-300"
+                                    style="background: var(--bg-card-solid); color: var(--text-primary); border: 1px solid var(--border-card);">
+                                Send Message
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer-main border-t py-12">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="reveal">
+                <a href="#" class="font-serif-elegant text-xl font-bold tracking-wide text-footer-main hover:text-cyan-400 transition-colors">Portfolio.</a>
+                <p class="text-xs mt-1.5 font-light" style="color: var(--text-muted);">Designed and coded from scratch.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium reveal delay-1" style="color: var(--text-muted);">
+                <a href="#home"    class="hover:text-cyan-400 transition-colors">Home</a>
+                <a href="#about"   class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#project" class="hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+            <div class="text-xs font-light reveal delay-2" style="color: var(--text-muted);">&copy; 2026 Indah. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <footer class="footer-bottom w-full py-4 text-center" style="border-top: 1px solid var(--border-card);">
+        <p class="font-serif-elegant text-xs tracking-widest uppercase text-footer-bottom">COPYRIGHT 2026. PORTOFOLIO KOLABORASI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

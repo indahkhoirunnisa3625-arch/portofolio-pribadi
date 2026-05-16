@@ -1,0 +1,303 @@
+/* ============================================
+   VARIABEL WARNA - DARK MODE (default)
+   ============================================ */
+:root {
+    --bg-body:        radial-gradient(circle at center, #0d1b2a 0%, #010811 100%);
+    --bg-navbar:      rgba(1, 8, 17, 0.7);
+    --bg-card:        rgba(15, 23, 42, 0.4);
+    --bg-card-solid:  #0f172a;
+    --bg-input:       rgba(15, 23, 42, 0.6);
+    --bg-logo-card:   rgba(15, 23, 42, 0.6);
+    --bg-contact-box: #e2e8f0;
+    --bg-contact-icon:    #0f172a;
+    --bg-form-box:    rgba(2, 6, 23, 0.4);
+    --bg-footer:      #020617;
+    --bg-footer2:     #000000;
+    --bg-btn:         rgba(8, 47, 73, 0.4);
+    --bg-skill-track: rgba(2, 6, 23, 0.6);
+
+    --text-primary:   #ffffff;
+    --text-secondary: #94a3b8;
+    --text-muted:     #64748b;
+    --text-nav:       #94a3b8;
+    --text-nav-logo:  #ffffff;
+    --text-contact-box: #0f172a;
+    --text-footer:    #ffffff;
+    --text-footer2:   #ffffff;
+
+    --border-card:    rgba(30, 41, 59, 0.8);
+    --border-input:   #1e293b;
+    --border-navbar:  rgba(34, 211, 238, 0.05);
+    --border-logo:    #1e293b;
+    --border-btn:     rgba(21, 94, 117, 0.6);
+    --border-skill:   #1e293b;
+    --border-contact: rgba(255,255,255,0.2);
+
+    --shadow-hero:    rgba(0, 0, 0, 0.5);
+    --shadow-card:    0 10px 30px rgba(0,0,0,0.3);
+
+    --divider:        rgba(34, 211, 238, 0.3);
+    --glow-orb:       rgba(8, 47, 73, 0.1);
+    --grid-line:      #22d3ee;
+    --grid-opacity:   0.1;
+
+    --skill-fill:     linear-gradient(to right, #164e63, #0891b2, #22d3ee);
+    --btn-text:       #22d3ee;
+    --btn-hover-bg:   #06b6d4;
+    --btn-hover-text: #020617;
+}
+
+/* ============================================
+   VARIABEL WARNA - LIGHT MODE
+   ============================================ */
+[data-theme="light"] {
+    --bg-body:        radial-gradient(circle at center, #f0f6ff 0%, #e8f0fe 100%);
+    --bg-navbar:      rgba(255, 255, 255, 0.85);
+    --bg-card:        rgba(255, 255, 255, 0.8);
+    --bg-card-solid:  #ffffff;
+    --bg-input:       #f8fafc;
+    --bg-logo-card:   #ffffff;
+    --bg-contact-box: #f1f5f9;
+    --bg-contact-icon:    #ffffff;
+    --bg-form-box:    rgba(255, 255, 255, 0.9);
+    --bg-footer:      #ffffff;
+    --bg-footer2:     #f1f5f9;
+    --bg-btn:         #eff9fb;
+    --bg-skill-track: #f1f5f9;
+
+    --text-primary:   #1e293b;
+    --text-secondary: #475569;
+    --text-muted:     #94a3b8;
+    --text-nav:       #64748b;
+    --text-nav-logo:  #0891b2;
+    --text-contact-box: #1e293b;
+    --text-footer:    #1e293b;
+    --text-footer2:   #64748b;
+
+    --border-card:    rgba(226, 232, 240, 0.8);
+    --border-input:   #e2e8f0;
+    --border-navbar:  rgba(6, 182, 212, 0.15);
+    --border-logo:    #e2e8f0;
+    --border-btn:     rgba(6, 182, 212, 0.4);
+    --border-skill:   #e2e8f0;
+    --border-contact: rgba(0,0,0,0.06);
+
+    --shadow-hero:    rgba(6, 182, 212, 0.15);
+    --shadow-card:    0 8px 24px rgba(0,0,0,0.06);
+
+    --divider:        rgba(6, 182, 212, 0.4);
+    --glow-orb:       rgba(6, 182, 212, 0.15);
+    --grid-line:      #06b6d4;
+    --grid-opacity:   0.05;
+
+    --skill-fill:     linear-gradient(to right, #67e8f9, #06b6d4, #0891b2);
+    --btn-text:       #0891b2;
+    --btn-hover-bg:   #06b6d4;
+    --btn-hover-text: #ffffff;
+}
+
+/* ============================================
+   BASE
+   ============================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-body);
+    background-attachment: fixed;
+    color: var(--text-secondary);
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.font-serif-elegant { font-family: 'Playfair Display', serif; }
+
+/* ============================================
+   DARK / LIGHT TOGGLE BUTTON
+   ============================================ */
+#theme-toggle {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    background: #1e293b;
+    border-radius: 999px;
+    border: 1.5px solid #334155;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    transition: background 0.35s, border-color 0.35s;
+    flex-shrink: 0;
+}
+
+[data-theme="light"] #theme-toggle {
+    background: #bae6fd;
+    border-color: #7dd3fc;
+}
+
+#theme-toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    transform: translateX(0);
+    user-select: none;
+}
+
+[data-theme="light"] #theme-toggle-thumb {
+    transform: translateX(24px);
+    background: #fef9c3;
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+.navbar-scrolled {
+    background-color: var(--bg-navbar) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid var(--border-navbar);
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
+/* ============================================
+   WARNA TEKS DINAMIS
+   ============================================ */
+.nav-logo  { color: var(--text-nav-logo) !important; transition: color 0.4s; }
+.nav-link  { color: var(--text-nav) !important; transition: color 0.3s; }
+.nav-link:hover { color: #22d3ee !important; }
+
+.text-dyn-primary   { color: var(--text-primary)   !important; transition: color 0.4s; }
+.text-dyn-secondary { color: var(--text-secondary) !important; transition: color 0.4s; }
+.text-dyn-muted     { color: var(--text-muted)     !important; transition: color 0.4s; }
+
+/* ============================================
+   CARD / SURFACE DINAMIS
+   ============================================ */
+.card-dyn {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    transition: background 0.4s, border-color 0.4s, box-shadow 0.3s;
+}
+.card-dyn:hover { box-shadow: var(--shadow-card); }
+
+.input-dyn {
+    background: var(--bg-input);
+    border: 1px solid var(--border-input);
+    color: var(--text-primary);
+    transition: background 0.4s, border-color 0.3s, color 0.4s;
+}
+.input-dyn:focus {
+    border-color: #22d3ee;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34,211,238,0.08);
+}
+
+.logo-card-dyn {
+    background: var(--bg-logo-card);
+    border: 1px solid var(--border-logo);
+    transition: background 0.4s, border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+.logo-card-dyn:hover { transform: translateY(-5px); }
+
+.skill-track-dyn {
+    background: var(--bg-skill-track);
+    border: 1px solid var(--border-skill);
+    transition: background 0.4s, border-color 0.4s;
+}
+
+/* ============================================
+   KEYFRAMES
+   ============================================ */
+@keyframes floatEffect     { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-15px)} }
+@keyframes floatEffectSlow { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes pulseGlow       { 0%,100%{transform:scale(1);opacity:.4} 50%{transform:scale(1.15);opacity:.7} }
+
+.animate-float      { animation: floatEffect 5s ease-in-out infinite; }
+.animate-float-slow { animation: floatEffectSlow 6s ease-in-out infinite; }
+.animate-glow       { animation: pulseGlow 6s ease-in-out infinite; }
+
+/* ============================================
+   SCROLL REVEAL
+   ============================================ */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }
+
+/* ============================================
+   SKILL PROGRESS BAR
+   ============================================ */
+.skill-progress {
+    width: 0;
+    height: 100%;
+    background: var(--skill-fill);
+    border-radius: 9999px;
+    box-shadow: 0 0 10px rgba(34,211,238,0.25);
+    transition: width 1.5s cubic-bezier(0.1,1,0.1,1), background 0.4s;
+}
+
+/* ============================================
+   PROJECT CARD 3D TILT
+   ============================================ */
+.project-card {
+    transition: transform 0.15s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+/* ============================================
+   CONTACT ICON HOVER
+   ============================================ */
+.group:hover .contact-icon {
+    transform: scale(1.1) rotate(6deg);
+    background-color: #22d3ee;
+    color: #020617;
+    box-shadow: 0 5px 15px rgba(34,211,238,0.3);
+}
+.contact-icon {
+    transition: all 0.3s ease;
+    background: var(--bg-contact-icon);
+    color: #22d3ee;
+}
+
+/* ============================================
+   FLOATING LABEL
+   ============================================ */
+.floating-label { transition: all 0.25s cubic-bezier(0.25,1,0.5,1); color: var(--text-muted); }
+.input-field:focus ~ .floating-label,
+.input-field:valid ~ .floating-label {
+    top: 6px;
+    font-size: 11px;
+    color: #22d3ee;
+    letter-spacing: 0.05em;
+}
+
+/* ============================================
+   MAGNETIC BUTTON
+   ============================================ */
+#magnetic-btn {
+    will-change: transform;
+    transition: transform 0.2s cubic-bezier(0.25,1,0.5,1), background-color 0.3s, box-shadow 0.3s;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer-main { background: var(--bg-footer); border-color: var(--border-card); transition: background 0.4s, border-color 0.4s; }
+.footer-bottom { background: var(--bg-footer2); transition: background 0.4s; }
+.text-footer-main   { color: var(--text-footer)  !important; transition: color 0.4s; }
+.text-footer-bottom { color: var(--text-footer2) !important; transition: color 0.4s; }
