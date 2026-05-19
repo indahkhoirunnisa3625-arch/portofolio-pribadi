@@ -1,6 +1,4 @@
-/* ============================================
-   VARIABEL WARNA - DARK MODE (default)
-   ============================================ */
+/*mode gelap*/
 :root {
     --bg-body:        radial-gradient(circle at center, #0d1b2a 0%, #010811 100%);
     --bg-navbar:      rgba(1, 8, 17, 0.7);
@@ -47,9 +45,7 @@
     --btn-hover-text: #020617;
 }
 
-/* ============================================
-   VARIABEL WARNA - LIGHT MODE
-   ============================================ */
+/*mode terang*/
 [data-theme="light"] {
     --bg-body:        radial-gradient(circle at center, #f0f6ff 0%, #e8f0fe 100%);
     --bg-navbar:      rgba(255, 255, 255, 0.85);
@@ -96,9 +92,7 @@
     --btn-hover-text: #ffffff;
 }
 
-/* ============================================
-   BASE
-   ============================================ */
+/* dasar*/
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -111,9 +105,7 @@ body {
 
 .font-serif-elegant { font-family: 'Playfair Display', serif; }
 
-/* ============================================
-   DARK / LIGHT TOGGLE BUTTON
-   ============================================ */
+/*button 2 mode*/
 #theme-toggle {
     position: relative;
     width: 52px;
@@ -154,9 +146,7 @@ body {
     background: #fef9c3;
 }
 
-/* ============================================
-   NAVBAR
-   ============================================ */
+/*navbar*/
 .navbar-scrolled {
     background-color: var(--bg-navbar) !important;
     backdrop-filter: blur(12px);
@@ -167,9 +157,7 @@ body {
     padding-bottom: 0.75rem !important;
 }
 
-/* ============================================
-   WARNA TEKS DINAMIS
-   ============================================ */
+/*warna teks*/
 .nav-logo  { color: var(--text-nav-logo) !important; transition: color 0.4s; }
 .nav-link  { color: var(--text-nav) !important; transition: color 0.3s; }
 .nav-link:hover { color: #22d3ee !important; }
@@ -178,9 +166,7 @@ body {
 .text-dyn-secondary { color: var(--text-secondary) !important; transition: color 0.4s; }
 .text-dyn-muted     { color: var(--text-muted)     !important; transition: color 0.4s; }
 
-/* ============================================
-   CARD / SURFACE DINAMIS
-   ============================================ */
+/*card foto*/
 .card-dyn {
     background: var(--bg-card);
     border: 1px solid var(--border-card);
@@ -214,9 +200,7 @@ body {
     transition: background 0.4s, border-color 0.4s;
 }
 
-/* ============================================
-   KEYFRAMES
-   ============================================ */
+/*robot*/
 @keyframes floatEffect     { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-15px)} }
 @keyframes floatEffectSlow { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
 @keyframes pulseGlow       { 0%,100%{transform:scale(1);opacity:.4} 50%{transform:scale(1.15);opacity:.7} }
@@ -225,9 +209,7 @@ body {
 .animate-float-slow { animation: floatEffectSlow 6s ease-in-out infinite; }
 .animate-glow       { animation: pulseGlow 6s ease-in-out infinite; }
 
-/* ============================================
-   SCROLL REVEAL
-   ============================================ */
+/*scroll*/
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -239,9 +221,7 @@ body {
 .delay-2 { transition-delay: 200ms; }
 .delay-3 { transition-delay: 300ms; }
 
-/* ============================================
-   SKILL PROGRESS BAR
-   ============================================ */
+/*skill*/
 .skill-progress {
     width: 0;
     height: 100%;
@@ -251,17 +231,13 @@ body {
     transition: width 1.5s cubic-bezier(0.1,1,0.1,1), background 0.4s;
 }
 
-/* ============================================
-   PROJECT CARD 3D TILT
-   ============================================ */
+/*project*/
 .project-card {
     transition: transform 0.15s ease, box-shadow 0.3s ease;
     transform-style: preserve-3d;
 }
 
-/* ============================================
-   CONTACT ICON HOVER
-   ============================================ */
+/*contact*/
 .group:hover .contact-icon {
     transform: scale(1.1) rotate(6deg);
     background-color: #22d3ee;
@@ -274,9 +250,7 @@ body {
     color: #22d3ee;
 }
 
-/* ============================================
-   FLOATING LABEL
-   ============================================ */
+/*label*/
 .floating-label { transition: all 0.25s cubic-bezier(0.25,1,0.5,1); color: var(--text-muted); }
 .input-field:focus ~ .floating-label,
 .input-field:valid ~ .floating-label {
@@ -286,17 +260,13 @@ body {
     letter-spacing: 0.05em;
 }
 
-/* ============================================
-   MAGNETIC BUTTON
-   ============================================ */
+/*button*/
 #magnetic-btn {
     will-change: transform;
     transition: transform 0.2s cubic-bezier(0.25,1,0.5,1), background-color 0.3s, box-shadow 0.3s;
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+/*footer*/
 .footer-main { background: var(--bg-footer); border-color: var(--border-card); transition: background 0.4s, border-color 0.4s; }
 .footer-bottom { background: var(--bg-footer2); transition: background 0.4s; }
 .text-footer-main   { color: var(--text-footer)  !important; transition: color 0.4s; }
